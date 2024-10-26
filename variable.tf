@@ -5,5 +5,5 @@ variable "bucket_name" {
 
 variable "bucket_acl" {
   type = string
-  default = "public-read"
+  default = "private"
 }
