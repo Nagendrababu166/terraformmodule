@@ -1,6 +1,6 @@
 resource "aws_s3_bucket" "example" {
-  bucket = "nitwallahoct"
-  acl = "private"
+  bucket = var.bucket_name
+  acl = var.bucket_acl
 }
 
 output "bucketname" {
