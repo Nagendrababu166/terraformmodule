@@ -6,7 +6,7 @@ resource "aws_s3_bucket" "example" {
 resource "aws_s3_bucket_versioning" "version" {
   bucket = aws_s3_bucket.example.id
   versioning_configuration {
-    status = "enabled"
+    status = "Enabled"
   }
 }
 
