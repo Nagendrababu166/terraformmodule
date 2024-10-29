@@ -10,10 +10,7 @@ resource "aws_s3_bucket_versioning" "version" {
   }
 }
 
-resource "aws_instance" "example" {
-  ami = "ami-0866a3c8686eaeeba"
-  instance_type = var.instancetype
-}
+
 output "bucketname" {
   value = aws_s3_bucket.example.bucket
 }
